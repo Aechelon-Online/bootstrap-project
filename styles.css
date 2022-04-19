@@ -1,0 +1,136 @@
+html, body {
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    background-color: purple;
+    max-width: 960px;
+    min-width: 280px;
+    height: 80vh;
+    min-height: 500px;
+}
+.form-box {
+    height: 90%;
+    min-height: 500px;
+    width: clamp(280px, 80vw, 875px);
+}
+.event-type {
+    padding-bottom: 0.275rem
+}
+.select-field {
+    border: none;
+    border-radius: 2px;
+}
+
+h3 {
+    font-size: clamp(1.25rem, 4vw, 2.5rem);
+    color: white;
+}
+label {
+    font-size: clamp(0.75rem, 4vw, 1.25rem);
+    color: white;
+}
+input {
+    width: 100%;
+}
+select {
+    width: 100%;
+    height: 110%;
+}
+
+/* CSS for Checkboxes */
+
+.list-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0.5rem;
+    color: #fff;
+}
+.selections {
+    width: 15px;
+    height: 15px;
+}
+.picks {
+    margin: auto 0;
+    padding: 0 5px;
+    font-size: clamp(0.75rem, 4vw, 1.2rem)
+}
+
+.entertainment-checkboxes, .list {
+    background: rgba(128, 0, 128, 0.9);
+    border-radius: 5px;
+}
+
+.entertainment-checkboxes {
+    position: relative;
+}
+
+.multi-selections {
+    position: relative;
+    display: inline-block;
+}
+
+.down-arrow {
+    position: absolute;
+    left:0.5rem;
+    padding-left: 0.5vw;
+    font-size: 20px;
+    cursor: pointer;
+}
+.list {
+    margin: 0;
+    display: none;
+}
+.show {
+    display: block;
+}
+
+/* CSS for Submit Button */
+
+button {
+    margin: clamp(0.5rem, 1vw, 100px);
+    width: clamp(80px, 15vw, 0%);
+    height: clamp(30px, 3vw, 30px);
+    background-color: rgba(250, 255, 255, 0.836);
+    border-radius: 5px;
+}
+button p {
+    font-size: clamp(1rem, 1vw, 2rem);
+}
+
+
+
+
+/* :root {
+    --header-text-size: clamp(2rem, 5vw, 5rem);
+}
+
+.div-1, .div-2, .div-3, .div-4 {
+    height: clamp(75px, 20vh, 400px);
+    font-size: var(--header-text-size);
+    cursor: pointer;
+    color: white;
+}
+.div-1 {
+    background-color: red;
+}
+.div-2 {
+    background-color: green;
+}
+.div-3 {
+    background-color: blue;
+}
+.div-4 {
+    background-color: rgb(170, 0, 255);
+}
+
+
+.faded {
+    background-color: white;
+    color: #222;
+    border:1px solid rgba(128, 128, 128, 0.5);
+} */
