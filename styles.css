@@ -4,13 +4,14 @@ html, body {
 }
 
 .container {
-    background-color: purple;
+    background-color: black;
     max-width: 960px;
     min-width: 280px;
     height: 80vh;
     min-height: 500px;
 }
 .form-box {
+    background: rgba(128, 0, 128);
     height: 90%;
     min-height: 500px;
     width: clamp(280px, 80vw, 875px);
@@ -65,9 +66,6 @@ select {
     border-radius: 5px;
 }
 
-.entertainment-checkboxes {
-    position: relative;
-}
 
 .multi-selections {
     position: relative;
@@ -76,12 +74,13 @@ select {
 
 .down-arrow {
     position: absolute;
-    left:0.5rem;
-    padding-left: 0.5vw;
-    font-size: 20px;
+    left: 1rem;
+    top: -0.65rem;
+    font-size: 30px;
     cursor: pointer;
 }
 .list {
+    position: absolute;
     margin: 0;
     display: none;
 }
@@ -91,14 +90,14 @@ select {
 
 /* CSS for Submit Button */
 
-button {
+.sub-button {
     margin: clamp(0.5rem, 1vw, 100px);
     width: clamp(80px, 15vw, 0%);
     height: clamp(30px, 3vw, 30px);
     background-color: rgba(250, 255, 255, 0.836);
     border-radius: 5px;
 }
-button p {
+.sub-button p {
     font-size: clamp(1rem, 1vw, 2rem);
 }
 
