@@ -1,43 +1,50 @@
-html, body {
-    margin: 0;
-    height: 100vh;
+:root {
+    --text-color: rgba(239, 239, 239, 0.902);
+    --bg-color: rgb(10, 10, 10);
 }
 
-.container {
-    background-color: black;
-    max-width: 960px;
-    min-width: 280px;
-    height: 80vh;
-    min-height: 500px;
+html, body {
+    margin: 0;
+    background-color: rgb(10, 10, 10);
+    margin: 0.75rem 0;
+    font-family: Avenir, sans-serif;
 }
+
+
+
 .form-box {
-    background: rgba(128, 0, 128);
-    height: 90%;
-    min-height: 500px;
-    width: clamp(280px, 80vw, 875px);
+    width: clamp(250px, 80vw, 600px);
 }
 .event-type {
-    padding-bottom: 0.275rem
+    padding-bottom: 0.25rem;
 }
 .select-field {
     border: none;
-    border-radius: 2px;
+    background-color: var(--bg-color);
+    box-shadow: -2px -2px inset gray,
+                2px 2px inset rgb(40, 40, 40);
+    font-size: 1rem;
+    padding: 2rem;
 }
 
+
 h3 {
-    font-size: clamp(1.25rem, 4vw, 2.5rem);
-    color: white;
+    font-size: 2rem;
+    color: var(--text-color);
 }
 label {
-    font-size: clamp(0.75rem, 4vw, 1.25rem);
-    color: white;
+    font-size: 1.25rem;
+    color: var(--text-color);
 }
 input {
     width: 100%;
+    background-color: var(--bg-color);
 }
+
+
 select {
+    color: var(--text-color);
     width: 100%;
-    height: 110%;
 }
 
 /* CSS for Checkboxes */
@@ -49,12 +56,20 @@ select {
     justify-content: flex-start;
     align-items: center;
     padding-left: 0.5rem;
-    color: #fff;
+    color: var(--text-color);
+    /* border: 1px solid var(--text-color); */
+    border-radius: 25px;
+    margin: 0.25rem 0;
 }
+
+
+
 .selections {
-    width: 15px;
-    height: 15px;
+    width: 1.125rem;
+    height: 1rem;
+    margin-right: 0.25rem;
 }
+
 .picks {
     margin: auto 0;
     padding: 0 5px;
@@ -62,7 +77,7 @@ select {
 }
 
 .entertainment-checkboxes, .list {
-    background: rgba(128, 0, 128, 0.9);
+    background:  var(--text-color);
     border-radius: 5px;
 }
 
@@ -82,7 +97,9 @@ select {
 .list {
     position: absolute;
     margin: 0;
+    padding-right: 0.25rem;
     display: none;
+    background-color: var(--bg-color);
 }
 .show {
     display: block;
@@ -91,45 +108,46 @@ select {
 /* CSS for Submit Button */
 
 .sub-button {
-    margin: clamp(0.5rem, 1vw, 100px);
-    width: clamp(80px, 15vw, 0%);
-    height: clamp(30px, 3vw, 30px);
-    background-color: rgba(250, 255, 255, 0.836);
+    margin: 1rem 0;
+    margin-left: 8px;
+    width: fit-content;
+    height: 2.5rem;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--bg-color);
     border-radius: 5px;
+    border: 2px solid var(--text-color);
 }
+
 .sub-button p {
-    font-size: clamp(1rem, 1vw, 2rem);
+    font-size: 1rem;
+    padding: 0 0.5rem;
+}
+
+.side-arrow {
+    padding-left: 0.5rem;
 }
 
 
-
-
-/* :root {
-    --header-text-size: clamp(2rem, 5vw, 5rem);
+@media only screen and (max-width: 500px) {
+    h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    label {
+        font-size: 1rem;
+    }
+    .select-field {
+        font-size: 0.75rem;
+    }
 }
 
-.div-1, .div-2, .div-3, .div-4 {
-    height: clamp(75px, 20vh, 400px);
-    font-size: var(--header-text-size);
-    cursor: pointer;
-    color: white;
+@media only screen and (max-width: 350px) {
+    h3 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    label {
+        font-size: .875rem;
+    }
 }
-.div-1 {
-    background-color: red;
-}
-.div-2 {
-    background-color: green;
-}
-.div-3 {
-    background-color: blue;
-}
-.div-4 {
-    background-color: rgb(170, 0, 255);
-}
-
-
-.faded {
-    background-color: white;
-    color: #222;
-    border:1px solid rgba(128, 128, 128, 0.5);
-} */

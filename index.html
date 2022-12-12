@@ -16,57 +16,60 @@
     <script
     type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container col-10 mx-auto rounded-3 form-box">
+    <div class="container-fluid rounded-3 border border-2 border-light form-box">
         <form class="container-fluid" action="https://formsubmit.co/greglucemusic@gmail.com" method="POST">
-            <h3 class="col m-3 mx-0 pt-3 px-2">Questions? Get them answered here.</h3>
-            <div class="container-fluid d-flex justify-content-between mx-0 px-0">
+            <h3 class="col m-3 mx-0 pt-3 px-2">Get your FREE quote!</h3>
+            <div class="container-fluid d-flex flex-column justify-content-between mx-0 px-0">
                 <div class="col">
-                    <label class="px-2 pb-1" for="name" required>Name</label>
+                    <label class="px-2 pb-1 pt-2" for="name" required>Name</label>
                     <div class="col px-2">
                         <input type="text" name="Name" required>
                     </div>
                 </div>
                 <div class="col">
-                    <label class="px-2 pb-1" for="cell-phone" required>Mobile</label>
+                    <label class="px-2 pb-1 pt-3" for="cell-phone" required>Mobile</label>
                     <div class="col px-2">
                         <input type="text" name="Cell Phone">
                     </div>
                 </div>
                 <div class="col">
-                    <label class="px-2 pb-1" for="email" required>Email</label>
+                    <label class="px-2 pb-1 pt-3" for="email" required>Email</label>
                     <div class="col px-2">
                         <input type="text" name="Email">
                     </div>
                 </div>
             </div>
-            <div class="container-fluid d-flex mx-0 px-0 justify-content-between">
-                <div class="col-6">
-                    <label class="px-2 pb-1" for="date-of-event" required>Date of Event</label>
+            <div class="container-fluid d-flex flex-column mx-0 px-0 justify-content-between">
+                <div class="col">
+                    <label class="px-2 pb-1 pt-3" for="date-of-event" required>Date of Event</label>
                     <div class="col px-2">
                     <input type="date" value="" name="Date Of Event">
                     </div>
                 </div>
-                <div class="col-6">
-                    <label class="px-2 event-type" for="event-type" required>Event Type</label>
-                    <div class="col px-2 pt-0" id="event-type">
+                <div class="col">
+                    <label class="px-2 pb-1 pt-3 event-type" for="event-type" required>Event Type</label>
+                    <div class="col px-2 p-1" id="event-type">
                         <select class="p-1 select-field">
-                            <option value="wedding">Wedding</option>
-                            <option value="private-party">Private Party</option>
-                            <option value="corporate-event">Corporate Event</option>
-                            <option value="fundraiser">Fundraiser</option>
-                            <option value="other">Other</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="private-party">Private Party</option>
+                                <option value="corporate-event">Corporate Event</option>
+                                <option value="fundraiser">Fundraiser</option>
+                                <option value="other">Other</option>
                         </select>
                     </div>
                 </div>
             </div>
-            <div class="px-2">
-                <label for="event-location" required>Event Location</label>
+            <div class="px-2 pb-1 pt-3">
+                <label class="pb-2" for="event-location" required>Event Location</label>
                 <input type="text" name="Event Location">
-                <label for="entertainment-selections" required>What would you like to discuss?</label>
+                <label class="pt-3" for="entertainment-selections" required>What would you like to discuss?</label>
             </div>
             <div class="multi-selections px-2 col-12">
                 <div class="entertainment-checkboxes col-12">
@@ -96,19 +99,20 @@
                     </label>
                 </div>
             </div>
-            <div class="px-2">
-                <label for="event-vision" required>Event Vision</label>
+            <div class="p-2">
+                <label class="pt-1 pb-1 pt-3" for="event-vision" required>Event Vision</label>
                 <input type="text" name="Event Vision">
             </div>
             <div class="px-2">
-                <label for="search-lead" required>How did you find us?</label>
+                <label class="pb-1 pt-3" for="search-lead" required>How did you find us?</label>
                 <input type="text" name="Search Reference">
             </div>
-            <button class="sub-button">
-                <p>Submit</p>
+            <button class="sub-button my-4">
+                <p class="pt-1 px-3 mb-1">Get quote <span class="side-arrow">></span></p>
             </button>
         </form>
     </div>
+    
 
 </body>
 </html>
