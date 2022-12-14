@@ -68,7 +68,6 @@ select {
     appearance: none; 
     border-width: 2px;
     border-style:  solid;
-    /* border-color: var(--text-color); */
     outline: none;
     height: 2rem;
 }
@@ -132,6 +131,7 @@ select {
 .list, .dots {
     position: absolute;
     margin: 0;
+    z-index: 10;
     padding-right: 0.25rem;
     display: none;
     background-color: var(--bg-color);
