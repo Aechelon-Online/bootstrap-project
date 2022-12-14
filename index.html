@@ -24,25 +24,25 @@
 </head>
 <body>
 <div class="d-flex justify-content-center">
-    <div class="container-fluid rounded-3 border border-2 border-light form-box">
+    <div class="container-fluid form-box">
         <form class="container-fluid" action="https://formsubmit.co/greglucemusic@gmail.com" method="POST">
             <h3 class="col m-3 mx-0 pt-3 px-2 form-header">Get your FREE quote!</h3>
             <div class="container-fluid d-flex flex-column justify-content-between mx-0 px-0">
                 <div class="col">
                     <label class="px-2 pb-1 pt-2" for="name" required>Name</label>
-                    <div class="col px-2">
+                    <div class="col px-2 bd-color">
                         <input type="text" name="Name" required>
                     </div>
                 </div>
                 <div class="col">
                     <label class="px-2 pb-1 pt-3" for="cell-phone" required>Mobile</label>
-                    <div class="col px-2">
+                    <div class="col px-2 bd-color">
                         <input type="text" name="Cell Phone">
                     </div>
                 </div>
                 <div class="col">
                     <label class="px-2 pb-1 pt-3" for="email" required>Email</label>
-                    <div class="col px-2">
+                    <div class="col px-2 bd-color">
                         <input type="text" name="Email">
                     </div>
                 </div>
@@ -56,8 +56,8 @@
                 </div>
                 <div class="col">
                     <label class="px-2 pb-1 pt-3 event-type" for="event-type" required>Event Type</label>
-                    <div class="col px-2 p-1" id="event-type">
-                        <select class="px-2 select-field">
+                    <!-- <div class="col px-2 p-1" id="event-type">
+                        <select class="px-2 pt-1 select-field">
                                 <option value=""><span class="down-arrow-option">&#x25BC;</span></option>
                                 <option value="wedding">Wedding</option>
                                 <option value="private-party">Private Party</option>
@@ -65,18 +65,42 @@
                                 <option value="fundraiser">Fundraiser</option>
                                 <option value="other">Other</option>
                         </select>
+                    </div> -->
+                    <div class="multi-selections px-2 col-12">
+                        <div class="event-radio-buttons col-12">
+                            <input type="text" name="Event Selections">
+                            <span class="down-arrow px-1">&#x25BC;</span>
+                        </div>
+                        <div class="dots">
+                            <label for="wedding" class="list-items">
+                                <input type="radio" name="events" id="wedding" class="selections" value="Wedding">
+                                <p class="picks">Wedding</p>
+                            </label>
+                            <label for="private-party" class="list-items">
+                                <input type="radio" name="events" id="private-party" class="selections">
+                                <p class="picks">Private Party</p>
+                            </label>
+                            <label for="corporate-event" class="list-items">
+                                <input type="radio" name="events" id="corporate-event" class="selections">
+                                <p class="picks">Corporate Event</p>
+                            </label>
+                            <label for="other" class="list-items">
+                            <input type="radio" name="events" id="other" class="selections">
+                            <p class="picks">Other</p>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="px-2 pb-1 pt-3">
                 <label class="pb-2" for="event-location" required>Event Location</label>
                 <input type="text" name="Event Location">
-                <label class="pt-3" for="entertainment-selections" required>What would you like to discuss?</label>
+                <label class="pt-3" for="entertainment-selections" required>Services needed</label>
             </div>
             <div class="multi-selections px-2 col-12">
                 <div class="entertainment-checkboxes col-12">
                     <input type="text" name="Entertainment Selections">
-                    <span class="down-arrow">&#x25BC;</span>
+                    <span class="down-arrow px-1">&#x25BC;</span>
                 </div>
                 <div class="list">
                     <label for="omb" class="omb list-items">
@@ -105,12 +129,12 @@
                 <label class="pt-1 pb-1 pt-2" for="event-vision" required>Event Vision</label>
                 <input type="text" name="Event Vision">
             </div>
-            <div class="px-2">
+            <div class="px-2 mb-2">
                 <label class="pb-1 pt-2" for="search-lead" required>How did you find us?</label>
                 <input type="text" name="Search Reference">
             </div>
             <button class="sub-button my-4">
-                <p class="pt-1 px-3 mb-1">Get quote <span class="side-arrow">></span></p>
+                <p class="pt-1 px-4 mb-1">Get quote <span class="side-arrow">></span></p>
             </button>
         </form>
     </div>

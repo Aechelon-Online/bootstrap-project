@@ -1,26 +1,37 @@
 :root {
     --text-color: rgba(239, 239, 239, 0.902);
+    --trans-color: rgba(255, 147, 172, 0.902);
     --bg-color: rgb(10, 10, 10);
 }
 
 html, body {
     background-color: rgb(10, 10, 10);
-    margin: 0.75rem 0;
-    
+    margin: 0.75rem 0; 
 }
 
 
 .form-box {
     width: clamp(250px, 80vw, 600px);
     font-family: Avenir, sans-serif;
+    border-width: 2px;
+    border-style:  solid;
+    border-color: var(--text-color);
+    border-radius: 5px;
 }
+
+.form-box, input[type=text], button, input[type=date], .select-field {
+    animation: coloring 6s infinite;
+}
+
 .event-type {
     padding-bottom: 0.25rem;
 }
 .select-field {
     background-color: var(--bg-color);
     font-size: 1rem;
-    border: 2px solid var(--text-color);
+    border-width: 2px;
+    border-style:  solid;
+    border-color: var(--text-color);
     border-radius: 5px;
 }
 
@@ -42,22 +53,31 @@ label {
 input {
     width: 100%;
     background-color: var(--bg-color);
-    border: 2px solid var(--text-color);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--text-color);
     border-radius: 5px;
     height: 2rem;
 }
+
 
 
 select {
     color: var(--text-color);
     width: 100%;
     appearance: none; 
-    border: 2px solid var(--text-color);
+    border-width: 2px;
+    border-style:  solid;
+    /* border-color: var(--text-color); */
     outline: none;
     height: 2rem;
 }
 
-
+@keyframes coloring {
+    0% {border-color: var(--text-color);}
+    50% {border-color: var(--trans-color);}
+    100% {border-color: var(--text-color);}
+}
 
 
 /* CSS for Checkboxes */
@@ -101,21 +121,22 @@ select {
 
 .down-arrow {
     position: absolute;
-    left: 1.125rem;
-    top: 0.2rem;
+    left: 0.875rem;
+    top: 0.375rem;
     font-size: 1rem;
     cursor: pointer;
     color: var(--text-color);
 }
 
 
-.list {
+.list, .dots {
     position: absolute;
     margin: 0;
     padding-right: 0.25rem;
     display: none;
     background-color: var(--bg-color);
 }
+
 .show {
     display: block;
 }

@@ -1,9 +1,13 @@
 const checkboxes = document.querySelector(".entertainment-checkboxes")
+const radios = document.querySelector(".event-radio-buttons")
 
 checkboxes.addEventListener('click', () => {
-    document.querySelector(".list").classList.toggle("show");
+    document.querySelector(".list").classList.toggle("show")
+})
 
-});
+radios.addEventListener('click', () => {
+    document.querySelector(".dots").classList.toggle("show")
+})
 
 
 
