@@ -6,7 +6,7 @@
 
 html, body {
     background-color: rgb(10, 10, 10);
-    margin: 0.75rem 0; 
+    margin: 0.75rem 0;
 }
 
 
@@ -60,7 +60,17 @@ input {
     height: 2rem;
 }
 
+.event-select {
+    color: var(--text-color);
+}
 
+
+.close-x {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    z-index: 5;
+}
 
 select {
     color: var(--text-color);
@@ -82,7 +92,7 @@ select {
 /* CSS for Checkboxes */
 
 .list-items {
-    width: 100%;
+    width: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -143,9 +153,12 @@ select {
 
 /* CSS for Submit Button */
 
+.button-div {
+    width: 100%;
+}
+
 .sub-button {
     margin: 1rem 0;
-    margin-left: 8px;
     width: fit-content;
     height: 2.5rem;
     padding: 0;
@@ -179,6 +192,10 @@ select {
     .down-arrow {
         font-size: 0.75rem;
         top: 0.4rem;
+    }
+
+    .sub-button {
+        width: 100%;
     }
 }
 
