@@ -11,12 +11,23 @@ checkboxes.addEventListener('click', () => {
     list.classList.toggle("show")
     isOpen = !isOpen
     serviceSelect.innerText = isOpen ? "▼" : "✕"
+    if(serviceSelect.innerText === "✕"){
+        serviceSelect.style.margin = "-2px 1px"
+    } else {
+        serviceSelect.style.margin = "0"
+    }
 })
 
 radios.addEventListener('click', () => {
     dots.classList.toggle("show")
     isOpen = !isOpen
     eventSelect.innerText = isOpen ? "▼" : "✕"
+    if(eventSelect.innerText === "✕"){
+        eventSelect.style.margin = "-2px 1px"
+    } else {
+        eventSelect.style.margin = "0"
+    }
+   
 })
 
 
